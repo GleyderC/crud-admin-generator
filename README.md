@@ -113,7 +113,7 @@ If you want to contribute code to CRUD Admin Generator, we are waiting for your 
 Some suggestions for improvement could be:
 
  - Different form fields depending on data type.: datetime, time...
- - Create admin user with a login and logout page.
+ - Create admin user with a login and logout page. <-- In progress
  - Generate CRUD for tables with more than one primary key.
  - Any other useful functionality!
 
@@ -125,5 +125,8 @@ Author
 * Twitter: *[@jonseg](https://twitter.com/jonseg)*
 * CRUD Admin Generator webpage: [http://crud-admin-generator.com](http://crud-admin-generator.com)
 
+Contributors
+------
+* Gleyder Cova <gleyder4@gmail.com>
 
   [1]: http://crud-admin-generator.com
