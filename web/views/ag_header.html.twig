@@ -10,9 +10,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </a>
-         <a href="{{ path('admin_logout') }}" class="navbar-btn sidebar-toggle " style="float:right;"  role="button">
-            <span class="">Logout</span>
-        </a>
-
+        {% if app.user %}
+            <a href="{{ path('admin_logout') }}" class="navbar-btn sidebar-toggle " style="float:right;"  role="button">
+                <span class="">Logout</span>
+            </a>
+        {% endif %}
     </nav>
 </header>
