@@ -13,6 +13,7 @@
 require_once __DIR__.'/../../vendor/autoload.php';
 require_once __DIR__.'/../../src/app.php';
 
+use Symfony\Component\HttpFoundation\Request;
 
 $app->match('/', function () use ($app) {
 
@@ -21,5 +22,11 @@ $app->match('/', function () use ($app) {
 })
 ->bind('dashboard');
 
+$app->get('/login', function(Request $request) use ($app) {
+    return $app['twig']->render('ag_login.html.twig', array(
+            'error' => $app['security.last_error']($request),
+            'last_username' => $app['session']->get('_security.last_username'),
+    ));
+});
 
 $app->run();
