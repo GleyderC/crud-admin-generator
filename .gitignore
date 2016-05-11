@@ -1,2 +1,5 @@
 vendor/
 composer.lock
+web/controllers/
+!web/controllers/base.php
+web/views/
